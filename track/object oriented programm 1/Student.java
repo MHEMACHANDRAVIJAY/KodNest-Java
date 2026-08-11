@@ -1,4 +1,4 @@
- class Student{
+  public class student {
     int roll;
     String name;
     double height;
@@ -8,12 +8,10 @@
     void sleep(){
         System.out.println("sleeping");
     }
-
 }
-
-class StudentApplication{
+class StudentApplication{ 
     public static void main(String[] args) {
-        Student s1 = new Student();
+        student s1 = new student();
         s1.roll = 12;
         s1.name = "Raja";
         s1.height = 5.5;
