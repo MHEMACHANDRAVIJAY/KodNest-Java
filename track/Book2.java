@@ -1,0 +1,14 @@
+package track;
+
+public class Book2 {
+    private int pageNum;
+    public void setData(int x) {
+        if(x > 0) {
+            pageNum = x;
+        }
+        public int getData() {
+            return pageNum;
+        }
+    }
+    
+}
