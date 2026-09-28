@@ -1,29 +1,33 @@
 public class Employee {
-    int id;
-    String name;
-    void work(){
-        System.out.println("working");
+    private String name;
+    private int id;
+    private int age;
+    private int salary;
+    private String designation;
+
+    Employee(String name, int id, int age, int salary, String designation) {
+        this.name = name;
+        this.id = id;
+        this.age = age;
+        this.salary = salary;
+        this.designation = designation;
     }
-}
-class EmployeeApplication {
+
+    void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + id);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
+        System.out.println("Designation: " + designation);
+    }
+
+    void work() {
+        System.out.println(name + " is working.");
+    }
+
     public static void main(String[] args) {
-        Employee e1 = new Employee();
-
-        e1.id = 11;
-        e1.name = "Anu";
-
-        System.out.println(e1.id);
-        System.out.println(e1.name);
-        e1.work();
-
-        Employee e2 = new Employee();
-       
-        e2.id = 13;
-        e2.name = "Raju";
-        
-        System.out.println(e2.id);
-        System.out.println(e2.name);
-
-        e2.work();
+        Employee employee = new Employee("Anu", 11, 25, 45000, "Software Developer");
+        employee.displayDetails();
+        employee.work();
     }
 }
